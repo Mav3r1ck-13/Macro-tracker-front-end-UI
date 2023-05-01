@@ -16,6 +16,7 @@
         <label for="password">Password</label>
         <input type="password" id="password" v-model="user.password" required />
       </div>
+  
       <button type="submit">Sign in</button>
       <p>
       <router-link :to="{ name: 'register' }">Need an account? Sign up.</router-link></p>
@@ -46,7 +47,7 @@ export default {
           if (response.status == 200) {
             this.$store.commit("SET_AUTH_TOKEN", response.data.token);
             this.$store.commit("SET_USER", response.data.user);
-            this.$router.push("/");
+            this.$router.push("/home");
           }
         })
         .catch(error => {

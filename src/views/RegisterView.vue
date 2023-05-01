@@ -17,6 +17,18 @@
         <label for="confirmPassword">Confirm Password</label>
         <input type="password" id="confirmPassword" v-model="user.confirmPassword" required />
       </div>
+      <div class="form-input-group">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" v-model="user.firstName" required />
+      </div>
+      <div class="form-input-group">
+        <label for="lastname">Last Name</label>
+        <input type="text" id="lastname" v-model="user.lastName" required />
+      </div>
+      <div class="form-input-group">
+        <label for="email">Email</label>
+        <input type="text" id="email" v-model="user.email" required />
+      </div>
       <button type="submit">Create Account</button>
       <p><router-link :to="{ name: 'login' }">Already have an account? Log in.</router-link></p>
     </form>
@@ -34,6 +46,9 @@ export default {
         username: '',
         password: '',
         confirmPassword: '',
+        firstName: '',
+        lastName: '',
+        email: '',
         role: 'user',
       },
       registrationErrors: false,
