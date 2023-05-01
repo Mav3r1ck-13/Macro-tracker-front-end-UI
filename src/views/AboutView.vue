@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about-page">
     <h1>Random Daily NASA Picture</h1>
      
     <img :src="picData.url" :alt="picData.title">

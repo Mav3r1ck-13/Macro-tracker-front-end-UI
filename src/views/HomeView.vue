@@ -1,19 +1,12 @@
 <template>
-  <div class="home">
-   
-    <food-list></food-list>
+  <div class="home-page">
+    <h1>Home</h1>
+    <p>You must be authenticated to see this</p>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-
-import FoodList from '../components/FoodList.vue'
-
 export default {
-  name: 'HomeView',
-  components: {
-    FoodList
-  }
-}
+  name: "home-page"
+};
 </script>
