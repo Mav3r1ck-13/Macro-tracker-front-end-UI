@@ -47,7 +47,7 @@ const router = new Router({
     },
     {
       path: "/register",
-      name: "register",
+      name: "register-page",
       component: RegisterView,
       meta: {
         requiresAuth: false

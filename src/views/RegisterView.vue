@@ -18,12 +18,12 @@
         <input type="password" id="confirmPassword" v-model="user.confirmPassword" required />
       </div>
       <div class="form-input-group">
-        <label for="firstname">First Name</label>
-        <input type="text" id="firstname" v-model="user.firstName" required />
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" v-model="user.firstName" required />
       </div>
       <div class="form-input-group">
-        <label for="lastname">Last Name</label>
-        <input type="text" id="lastname" v-model="user.lastName" required />
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" v-model="user.lastName" required />
       </div>
       <div class="form-input-group">
         <label for="email">Email</label>
