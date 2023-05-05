@@ -43,15 +43,15 @@ export default {
   data() {
     return {
       user: {
-        username: '',
-        password: '',
-        confirmPassword: '',
-         firstName: '',
-         lastName: '',
-         email: '',
+        username: "",
+        password: "",
+        confirmPassword: "",
+         firstName: "",
+         lastName: "",
+         email: "",
         role: 'user',
       },
-      registrationErrors: false,
+ 
       registrationErrorMsg: 'There were problems registering this user.',
     };
   },
