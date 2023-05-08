@@ -22,7 +22,7 @@ const router = new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/home-page',
       name: 'home',
       component: HomeView,
       meta: {
