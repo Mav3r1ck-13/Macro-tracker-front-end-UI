@@ -5,7 +5,8 @@
           <table>
               <thead>
                   <tr>
-                      <th>Food Id</th>
+                      <th>Intake Id</th>
+                      <th>User Id</th>
                       <th>Protein</th>
                       <th>Carbs</th>
                       <th>Fats</th>
@@ -15,7 +16,8 @@
               </thead>
               <tbody>
                   <tr v-for="item in foods" v-bind:key="item.foodId">
-                      <td>{{ item.foodId }}</td>
+                      <td>{{ item.intakeId }}</td>
+                      <td>{{ item.userId }}</td>
                       <td>{{ item.protein }}</td>
                       <td>{{ item.carbs }}</td>
                       <td>{{ item.fats }}</td>
